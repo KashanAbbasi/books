@@ -47,6 +47,8 @@
         </div>
       </div>
 
+      <div id="adminStatus" class="alert alert-info d-none mb-4" role="alert"></div>
+
       <div class="row g-4">
         <div class="col-lg-4">
           <div class="card border-0 shadow-sm">
@@ -88,14 +90,16 @@
       </div>
 
       <div class="alert alert-info mt-4 mb-0">
-        Netlify Note: This starter stores data in browser LocalStorage. For production database, connect Netlify Functions to a managed DB (e.g. PlanetScale/Supabase). PHP/MySQL runtime is not available directly on Netlify static hosting.
+        Supabase Note: this dashboard now reads and writes books from your Supabase <code>books</code> table. Keep your RLS policies limited to trusted admins before using this in production.
       </div>
     </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/data.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/supabase.js"></script>
   <script src="assets/js/admin.js"></script>
 </body>
 </html>
